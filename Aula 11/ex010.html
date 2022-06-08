@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Digite a sua velocidade: <input type="number" id="speed"> Km/h. </p>
+    <button id="check">Verificar</button>
+    
+    <div class="text">
+
+    </div>
+    <script>
+        const checkSpeed = document.querySelector('#check')
+        const inputValue = document.querySelector('#speed')
+        const message = document.querySelector('.text')
+
+        checkSpeed.addEventListener('click', () =>{
+            
+            message.innerHTML = `<p>A sua velocidade é de <strong>${inputValue.value} Km/h</strong></p>`
+
+            if (Number(inputValue.value) > 60){
+
+                message.innerHTML += `<p>Você foi <strong>MULTADO</strong> por excesso de velocidade!</p>`
+            }
+            message.innerHTML += `<p>Use sempre cinto de segurança e dirija com cuidado!</p>`
+        })
+    </script>
+</body>
+</html>

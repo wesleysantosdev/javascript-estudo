@@ -1,0 +1,50 @@
+body {
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+main {          
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
+    
+}
+
+#res{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto-container{
+    display: none;
+    position: relative;
+    width: 250px;
+    background-color: black;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-container img{
+    display: none;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+footer{
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>Checagem de Nacionalidade</h1>
+    <p>Digite o país que você nasceu: <input type="text" id="usersCountry"></p>
+    <button id="check">Verificar</button>
+    <div class="text">
+
+    </div>
+    <script>
+        const inputValue = document.querySelector('#usersCountry')
+        const checkCountry = document.querySelector('#check')
+        const message = document.querySelector('.text')
+
+        checkCountry.addEventListener('click', () =>{
+            inputValue.value.toUpperCase() === 'BRASIL' ? message.innerHTML = `<p>Você é brasileiro(a).</p>` : message.innerHTML = `<p>Você é estrangeiro(a).</p>`
+        })
+        
+    </script>
+</body>
+</html>
