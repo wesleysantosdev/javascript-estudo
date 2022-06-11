@@ -17,12 +17,9 @@ main {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
 }
 
-.btn-wrap{
-    display: block;
-}
 
-select{
-    padding: 10px;
+#valores{
+    width: 150px;
 }
 
 footer{
